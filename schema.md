@@ -17,13 +17,13 @@
   - `category`: String.
 - **Taggings**
   - `id`: Integer, primary key.
-  - `animal_id`: Integer, foreign key referencing `id` column in Animals table.
-  - `researcher_id`: Integer, foreign key referencing `id` column in Researchers table.
+  - `animal_id`: Integer, foreign key referencing `id` column in Animals table. Add "ON DELETE CASCADE".
+  - `researcher_id`: Integer, foreign key referencing `id` column in Researchers table. Add "ON DELETE CASCADE".
 - **Sightings**
   - `id`: Integer, primary key.
   - `researcher_id`: Integer, foreign key referencing `id` column in Researchers table.
-  - `species_id`: Integer, foreign key referencing `id` column in Species table.
-  - `habitat_id`: Integer, foreign key referencing `id` column in Habitats table.
+  - `species_id`: Integer, foreign key referencing `id` column in Species table. Add "ON DELETE CASCADE".
+  - `habitat_id`: Integer, foreign key referencing `id` column in Habitats table. Add "ON DELETE CASCADE".
 
 ## Seed Data
 
