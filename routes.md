@@ -23,7 +23,7 @@
 - **Taggings**
   - GET `/taggings`: Get all taggings.
   - GET `/taggings/:id`: Get single tagging.
-  - GET `/taggings/researcher/:id`: Get all taggings performed by a specific researcher.
+  - GET `/taggings/researchers/:id`: Get all taggings performed by a specific researcher.
   - GET `/taggings/animals/:id`: Get all taggings performed on a specific animal.
   - POST `/taggings`: Add new tagging.
 - **Sightings**
