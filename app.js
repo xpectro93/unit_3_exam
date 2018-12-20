@@ -26,6 +26,10 @@ app.get('/', (req, res) => {
   res.send('This b Poseidons Territory!')
 });
 
+app.get('*', (req, res) => {
+  res.send("You shouldn't be here! Something has gone horribly wrong!")
+})
+
 app.listen(3000, () => {
   console.log('Listening to seashells at 3k!');
 });
